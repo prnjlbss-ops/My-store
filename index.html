@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Store</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f3f6;
+        }
+
+        header {
+            background: #2874f0;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .search {
+            margin-top: 12px;
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .categories {
+            background: white;
+            padding: 15px;
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+        }
+
+        .category {
+            min-width: 80px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .banner {
+            margin: 10px;
+            padding: 35px 20px;
+            background: white;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .banner h1 {
+            margin-bottom: 10px;
+        }
+
+        .products {
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .product {
+            background: white;
+            padding: 12px;
+            border-radius: 5px;
+        }
+
+        .product img {
+            width: 100%;
+            height: 160px;
+            object-fit: contain;
+        }
+
+        .product h3 {
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+
+        .buy {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            border: none;
+            background: #ff9f00;
+            color: white;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">MY STORE</div>
+
+    <input
+        class="search"
+        type="text"
+        placeholder="Search products..."
+    >
+</header>
+
+<div class="categories">
+    <div class="category">📱 Mobiles</div>
+    <div class="category">👕 Fashion</div>
+    <div class="category">💻 Electronics</div>
+    <div class="category">🏠 Home</div>
+    <div class="category">🎮 Gaming</div>
+</div>
+
+<div class="banner">
+    <h1>Welcome to My Store</h1>
+    <p>Best products at great prices</p>
+</div>
+
+<section class="products">
+
+    <div class="product">
+        <img src="https://via.placeholder.com/300x300" alt="Product">
+        <h3>Sample Product 1</h3>
+        <div class="price">₹999</div>
+        <button class="buy">Buy Now</button>
+    </div>
+
+    <div class="product">
+        <img src="https://via.placeholder.com/300x300" alt="Product">
+        <h3>Sample Product 2</h3>
+        <div class="price">₹1,499</div>
+        <button class="buy">Buy Now</button>
+    </div>
+
+</section>
+
+</body>
+</html>
